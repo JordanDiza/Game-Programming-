@@ -1,0 +1,165 @@
+
+2532426@D24303-BFCB3Q3 MINGW64 ~
+$ git --version
+git version 2.45.2.windows.1
+
+2532426@D24303-BFCB3Q3 MINGW64 ~
+$ pwd
+/c/Users/2532426
+
+2532426@D24303-BFCB3Q3 MINGW64 ~
+$ git config --global user.name "%JordanDiza%"
+
+2532426@D24303-BFCB3Q3 MINGW64 ~
+$ git config --global user.email "%dizaj8@gmail.com%"
+
+2532426@D24303-BFCB3Q3 MINGW64 ~
+$ git clone https://github.com/JordanDiza/Game-Programming-.git
+Cloning into 'Game-Programming-'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+2532426@D24303-BFCB3Q3 MINGW64 ~
+$ cd Game-Programming-/
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ ls
+README.md
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ ls -a
+./  ../  .git/  README.md
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        MyStory1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        MyStory1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git add --all
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   MyStory1.txt
+        modified:   README.md
+
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git commit -m "I updated README.md and added MyStory1.txt"
+[main 76a8c61] I updated README.md and added MyStory1.txt
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 MyStory1.txt
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    MyStory1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        MyStory2.txt
+        MyStory3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git add --all
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    MyStory1.txt
+        new file:   MyStory2.txt
+        new file:   MyStory3.txt
+
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git commit -m " I deleted MyStory1.txt and added two files MyStory2.txt and MyStory3.text"
+[main f54e40a]  I deleted MyStory1.txt and added two files MyStory2.txt and MyStory3.text
+ 3 files changed, 2 insertions(+), 1 deletion(-)
+ delete mode 100644 MyStory1.txt
+ create mode 100644 MyStory2.txt
+ create mode 100644 MyStory3.txt
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git log
+commit f54e40a2e0a621e7ef68bcb925a2c294bf3b4d13 (HEAD -> main)
+Author: %JordanDiza% <%dizaj8@gmail.com%>
+Date:   Tue Nov 4 13:39:28 2025 -0500
+
+     I deleted MyStory1.txt and added two files MyStory2.txt and MyStory3.text
+
+commit 76a8c61bdc6f334025d8433778c8adc26c3744a2
+Author: %JordanDiza% <%dizaj8@gmail.com%>
+Date:   Tue Nov 4 13:35:14 2025 -0500
+
+    I updated README.md and added MyStory1.txt
+
+commit 6c61e73f0af4822f8833fd48fcceb427810c6477 (origin/main, origin/HEAD)
+Author: JordanDiza <dizaj8@gmail.com>
+Date:   Tue Nov 4 13:23:42 2025 -0500
+
+    Initial commit
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 758 bytes | 758.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/JordanDiza/Game-Programming-.git
+   6c61e73..f54e40a  main -> main
+
+2532426@D24303-BFCB3Q3 MINGW64 ~/Game-Programming- (main)
+$
